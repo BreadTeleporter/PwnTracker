@@ -1,0 +1,8 @@
+#!/bin/bash
+while :
+do
+clear
+echo PwnTracker v1.0.1
+cat /var/log/nginx/access.log | egrep --color 'cgi-bin|remote|r00t|owned|killed|phpMyAdmin|403|admin|die|console|execute'
+sleep 5
+done
